@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ultimate</title>
-    
+
     <link rel="stylesheet" href="./style/style.css">
 
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="./style/swiper.css">
+
 </head>
+
 <body>
     <div class="main_wrapper">
         <div class="child_wrapper">
@@ -22,31 +30,31 @@
                     </div>
                     <!--navigation-->
                     <div class="nav__block">
-                                <div class="nav__block_element">
-                                    <a href="#" class="nav__block__element-a">
-                                        О нас
-                                    </a>
-                                </div>
-                                <div class="nav__block_element">
-                                    <a href="#" class="nav__block__element-a">
-                                        Кейсы
-                                    </a>
-                                </div>
-                                <div class="nav__block_element">
-                                    <a href="#" class="nav__block__element-a">
-                                        Услуги
-                                    </a>
-                                </div>
-                                <div class="nav__block_element">
-                                    <a href="#" class="nav__block__element-a">
-                                        Партнеры
-                                    </a>
-                                </div>
-                                <div class="nav__block_element">
-                                    <a href="#" class="nav__block__element-a">
-                                        Контакты
-                                    </a>
-                                </div>
+                        <div class="nav__block_element">
+                            <a href="#" class="nav__block__element-a">
+                                О нас
+                            </a>
+                        </div>
+                        <div class="nav__block_element">
+                            <a href="#" class="nav__block__element-a">
+                                Кейсы
+                            </a>
+                        </div>
+                        <div class="nav__block_element">
+                            <a href="#" class="nav__block__element-a">
+                                Услуги
+                            </a>
+                        </div>
+                        <div class="nav__block_element">
+                            <a href="#" class="nav__block__element-a">
+                                Партнеры
+                            </a>
+                        </div>
+                        <div class="nav__block_element">
+                            <a href="#" class="nav__block__element-a">
+                                Контакты
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -86,15 +94,49 @@
             <!------------------------------------------------->
             <!--*CONTENT-->
             <div class="content__wrapper">
-                <div class="placeholder__logo">
-                    
-                </div>
+
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="placeholder__logo"></div>
+                            </div>
+                            <div class="swiper-slide">Slide 2</div>
+                            <div class="swiper-slide">Slide 3</div>
+                            <div class="swiper-slide">Slide 4</div>
+                            <div class="swiper-slide">Slide 5</div>
+            
+                        </div>
+
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+
+                        <div class="swiper__pagination_wrap">
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+
             </div>
             <!--*END CONTENT-->
             <!------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
             <!--*FOOTER-->
             <div class="footer__wrapper">
-
+                <div class="footer__content_wrapper">
+                    <p class="footer__content_wrapper-p">
+                        Copyright © 2017-2022. Ultimate. All Right Reserved.
+                    </p>
+                </div>
             </div>
             <!--*END FOOTER-->
         </div>
@@ -103,5 +145,23 @@
 
 
     <script src="./js/script.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
 </body>
+
 </html>
