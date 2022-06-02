@@ -78,19 +78,69 @@ p {
     font-size: 18px;
 }
 .language_search_block {
-    background-color: antiquewhite;
+
     width: 700px ;
     display: flex;
+
+    background-image: url('/imgs/line_right.png');
+    background-repeat: no-repeat;
+
+    background-position: -30px 40px;
 }
 .search__block {
-    background-color: brown;
+
     height: 100%;
     width: 50%;
 }
 .language__block {
-    background-color: burlywood;
+
     height: 100%;
     width:50%;
+}
+.lang__wrapper {
+
+    display: flex;
+    height: 50px;
+    width: 140px;
+    justify-content: space-between;
+    align-items: center;
+
+
+    position: absolute;
+    top: 25px;
+    right: 96px;
+}
+.lang_az {
+    width: 46px;
+    height: 43px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    background-image: url('/imgs/inactive_lang.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.lang_ru {
+    width: 46px;
+    height: 43px;
+
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+
+    background-image: url('/imgs/active_lang_back.png') , url('/imgs/active_lang.png');
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .content__wrapper {
     height: 100%;
