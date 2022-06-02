@@ -117,7 +117,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    
 
     background-image: url('/imgs/inactive_lang.png');
     background-repeat: no-repeat;
@@ -127,7 +127,7 @@ p {
 
 .lang_az:hover{
 
-    background-image: url('/imgs/active_lang_back.png') , url('/imgs/inactive_lang.png');
+    background-image: url('../imgs/active_lang_back.png') , url('../imgs/inactive_lang.png');
 
 }
 .lang_ru {
