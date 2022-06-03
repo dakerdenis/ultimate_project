@@ -1,0 +1,40 @@
+
+.lang_az {
+    width: 46px;
+    height: 43px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+
+    background-image: url('/imgs/active_lang.png'),url('../imgs/active_lang_back.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.lang_ru:hover{
+
+    background-image: url('../imgs/active_lang_back.png') , url('../imgs/inactive_lang.png');
+
+}
+.lang_ru {
+    width: 46px;
+    height: 43px;
+
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+
+
+    background-image: url('/imgs/inactive_lang_back.png') , url('/imgs/inactive_lang.png');
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
