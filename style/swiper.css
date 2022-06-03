@@ -2,6 +2,8 @@
     width: calc(100% - 50px);
     margin: 0 auto;
     height: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   .swiper-slide {
@@ -23,9 +25,12 @@
     -webkit-align-items: center;
     align-items: center;
     color: #fff;
+    margin: 0 auto;
     
   }
-
+.swiper-wrapper{
+  margin: 0;
+}
   .swiper-slide img {
     display: block;
     width: 100%;
