@@ -40,7 +40,9 @@
 
 
 
-
+.swiper-pagination{
+  z-index: 12;
+}
  .swiper-pagination-bullet {
       background: rgba(255, 0, 122, 0.4);
       width: 11px;
