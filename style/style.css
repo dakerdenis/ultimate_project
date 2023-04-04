@@ -101,6 +101,17 @@ h6 {
 
 
 /****************/
+
+.top_image__left{
+  position: absolute;
+  left: 25px;
+  top: 47px;
+}
+.top_image__right{
+  position: absolute;
+  right: 25px;
+  top: 47px;
+}
 .navbar_wrapper {
 
   width: 100%;
@@ -151,7 +162,7 @@ cursor: pointer;
 
 }
 .navbar__languages {
-  background-color: green;
+
   width: 140px;
   height: 43px;
 }
@@ -163,12 +174,13 @@ cursor: pointer;
 }
 .navbar__language__element {
   position: relative;
-  background-color: blue;
+
     height: 43px;
   width: 46px;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 .navbar__language__element img {
   position: absolute;
@@ -182,6 +194,7 @@ font-weight: 400;
 line-height: 24px;
 letter-spacing: 0em;
 text-align: left;
+color: #fff;
 }
 
 
