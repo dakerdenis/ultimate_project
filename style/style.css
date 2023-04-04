@@ -96,15 +96,16 @@ h6 {
   width: 100%;
   height: 100vh;
   position: relative;
+  background-image: url('../img/Background.png');
 }
 
 
 /****************/
 .navbar_wrapper {
-  background-color: red;
 
   width: 100%;
   position: absolute;
+  z-index: 2;
 }
 .navbar_container {
   width: 100%;
@@ -145,7 +146,8 @@ font-size: 18px;
 font-weight: 400;
 line-height: 24px;
 letter-spacing: 0em;
-
+color: #fff;
+cursor: pointer;
 
 }
 .navbar__languages {
@@ -187,7 +189,8 @@ text-align: left;
 .swiper {
 }
 .mySwiper {
-  z-index: -1;
+  z-index: 1;
+  color: #fff;
 }
 .swiper-wrapper {
 }
@@ -201,11 +204,19 @@ text-align: left;
 }
 .footer_wrapper {
   position: absolute;
-  bottom: 0;
-  display: none;
-  visibility: hidden;
+  bottom: 20px;
+width: 100%;
+padding: 0px 0px 35px 50px;
 }
 .footer__container {
+
 }
 .footer__content {
+font-family: 'Inter', sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+color: #fff;
 }
