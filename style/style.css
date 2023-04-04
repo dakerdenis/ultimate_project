@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
 * {
   padding: 0;
   margin: 0;
@@ -39,7 +40,7 @@ body {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  font-family: "Noto Sans", sans-serif;
+font-family: 'Inter', sans-serif;
 }
 
 body.lock {
@@ -93,5 +94,88 @@ h6 {
 }
 .main_wrapper{
   width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+
+/****************/
+.navbar_wrapper {
+  background-color: red;
+
+  width: 100%;
+  position: absolute;
+}
+.navbar_container {
+  width: 100%;
   height: 100%;
+  padding: 0px 96px 0px 50px;
+
+
+  display: flex;
+    justify-content: space-between;
+  align-items: center;
+}
+.navbar__logo_nav_wrapper {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+
+}
+.navbar__logo {
+  width: 194px;
+  height: 73px;
+}
+.navbar__logo img{
+    width: 194px;
+  height: 73px;
+}
+.navbar__navigation {
+  margin-left: 106px;
+}
+.navbar__navigation_wrapper {
+  display: flex;
+}
+.navbar__navigation_element {
+  margin-left: 40px;
+}
+.navbar__navigation_element a {
+font-family: 'Inter', sans-serif;
+font-size: 18px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+
+
+}
+.navbar__languages {
+}
+.navbar__languages__wrapper {
+}
+.navbar__language__element {
+}
+.swiper {
+}
+.mySwiper {
+  z-index: -1;
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.swiper-button-next {
+}
+.swiper-button-prev {
+}
+.swiper-pagination {
+}
+.footer_wrapper {
+  position: absolute;
+  bottom: 0;
+  display: none;
+  visibility: hidden;
+}
+.footer__container {
+}
+.footer__content {
 }
