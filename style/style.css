@@ -204,8 +204,13 @@ color: #fff;
 .mySwiper {
   z-index: 1;
   color: #fff;
+  margin-bottom: 35px;
 }
 .swiper-wrapper {
+}
+.slider__big_logo{
+  width: 1220px;
+  height: 463px;
 }
 .swiper-slide {
 }
@@ -232,4 +237,19 @@ line-height: 19px;
 letter-spacing: 0em;
 text-align: left;
 color: #fff;
+}
+
+
+
+.swiper-pagination-bullet{
+  background-color: rgba(255, 0, 122, 0.4);
+  width: 13px;
+  height: 13px;
+  margin-left: 15px;
+}
+.swiper-pagination-bullet-active {
+     background-color: #FF007A !important;
+}
+:root {
+  --swiper-pagination-bullet-horizontal-gap: 20px;
 }
