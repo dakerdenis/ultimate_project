@@ -35,19 +35,19 @@
           <div class="navbar__navigation">
             <div class="navbar__navigation_wrapper">
               <div class="navbar__navigation_element">
-                <a href="#">О Нас</a>
+                <a id="nav_content" href="#">О Нас</a>
               </div>
               <div class="navbar__navigation_element">
-                <a href="#">Кейсы</a>
+                <a id="nav_content" href="#">Кейсы</a>
               </div>
               <div class="navbar__navigation_element">
-                <a href="#">Услуги</a>
+                <a id="nav_content" href="#">Услуги</a>
               </div>
               <div class="navbar__navigation_element">
-                <a href="#">Партнеры</a>
+                <a id="nav_content" href="#">Партнеры</a>
               </div>
               <div class="navbar__navigation_element">
-                <a href="#">Контакты</a>
+                <a id="nav_content" href="#">Контакты</a>
               </div>
             </div>
           </div>
@@ -57,12 +57,12 @@
         <!----languages----->
         <div class="navbar__languages">
           <div class="navbar__languages__wrapper">
-            <div class="navbar__language__element">
-              <img src="./img/language_deactive.svg" alt="">
+            <div id="language_az" class="navbar__language__element">
+              <img id="language_az_img" class="language_image" src="./img/language_deactive.svg" alt="">
               <p>AZ</p>
             </div>
-            <div class="navbar__language__element navbar__language__element_active">
-              <img src="./img/language_active.svg" alt="">
+            <div id="language_ru" class="navbar__language__element navbar__language__element_active">
+              <img id="language_ru_img" class="language_image" src="./img/language_active.svg" alt="">
               <p>RU</p>
             </div>
           </div>
@@ -269,7 +269,7 @@ PARTICLES.forEach(P => {
   </script>
 
 
-
+  <script src="./script/app.js"></script>
 </body>
 
 </html>
