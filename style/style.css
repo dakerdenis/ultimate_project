@@ -182,6 +182,9 @@ cursor: pointer;
   justify-content: center;
   cursor: pointer;
 }
+.navbar__language__element_active{
+
+}
 .navbar__language__element img {
   position: absolute;
   height: 43px;
