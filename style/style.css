@@ -149,7 +149,8 @@ h6 {
   display: flex;
 }
 .navbar__navigation_element {
-  margin-left: 40px;
+	text-align: center;
+	width: 105px;
 }
 .navbar__navigation_element a {
 font-family: 'Inter', sans-serif;
@@ -266,6 +267,10 @@ color: #fff;
   --swiper-pagination-bullet-horizontal-gap: 20px;
 }
 
+
+.navbar_animation{
+	animation-name: navbar_animation;
+}
 
 
 
@@ -542,3 +547,64 @@ button svg {
 	inline-size: 1.25em;
 	translate: -25% -5%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

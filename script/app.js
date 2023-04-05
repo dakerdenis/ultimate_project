@@ -14,6 +14,7 @@ language_az.addEventListener('click', ()=>{
         language_ru.classList.remove('navbar__language__element_active');
         language_ru_img.src="./img/language_deactive.svg";
         language_az_img.src="./img/language_active.svg";
+        change_navbar('az');
     }
 });
 
@@ -26,6 +27,7 @@ language_ru.addEventListener('click', ()=>{
         language_az.classList.remove('navbar__language__element_active')
         language_az_img.src="./img/language_deactive.svg";
         language_ru_img.src="./img/language_active.svg";
+        change_navbar('ru');
     }
 });
 
@@ -33,26 +35,48 @@ language_ru.addEventListener('click', ()=>{
 const navbar__elements = document.querySelectorAll('#nav_content');
 
 
+const languageru_nav = [
+    
+     'Кейсы',
+     'Услуги',
+     'Партнеры',
+     'Контакты',
+     'О нас',
+]
+
+const languageaz_nav = [
+     
+     'Keyslər',
+    'Xidmətlər',
+     'Partnyorlar',
+     'Əlaqə',
+     'Haqqımızda',
+]
+
+
 function change_navbar(e){
     if(e ==='az'){
+        for(let i = 0; i < 5; i ++){
+            navbar__elements[i].innerText = languageaz_nav[i];
+            navbar__elements[i].classList.add('navbar_animation');
 
+        }
     }else if (e ==='ru'){
+        for(let i = 0; i < 5; i ++){
+            navbar__elements[i].innerText = languageru_nav[i]
+            navbar__elements[i].classList.add('navbar_animation');
 
+        }
     }
 }
 
-const languageru_nav = {
-    nav1: 'О нас',
-    nav2: 'Кейсы',
-    nav3: 'Услуги',
-    nav4: 'Партнеры',
-    nav5: 'Контакты'
-}
 
-const languageaz_nav = {
-    nav1: 'Haqqımızda',
-    nav2: 'Keyslər',
-    nav3: 'Hidmətlər',
-    nav4: 'Partnyorlar',
-    nav5: 'Əlaqə'
-}
+
+
+
+
+
+
+
+
+
