@@ -54,20 +54,36 @@ const languageaz_nav = [
 ]
 
 
+var newSpan = document.createElement("span");
+
+
+for(let i = 0; i < 5; i ++){
+    navbar__elements[i].innerText = languageru_nav[i]
+
+}
 function change_navbar(e){
     if(e ==='az'){
         for(let i = 0; i < 5; i ++){
-            navbar__elements[i].innerText = languageaz_nav[i];
+            navbar__elements[i].innerText = languageaz_nav[i]
             navbar__elements[i].classList.add('navbar_animation');
-
         }
+        setTimeout(()=>{
+            navbar__elements.forEach(element => {
+                element.classList.remove('navbar_animation')
+            });
+        },1000);
     }else if (e ==='ru'){
         for(let i = 0; i < 5; i ++){
             navbar__elements[i].innerText = languageru_nav[i]
             navbar__elements[i].classList.add('navbar_animation');
-
         }
+        setTimeout(()=>{
+            navbar__elements.forEach(element => {
+                element.classList.remove('navbar_animation')
+            });
+        },1000);
     }
+    
 }
 
 

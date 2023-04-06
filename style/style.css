@@ -151,6 +151,8 @@ h6 {
 .navbar__navigation_element {
 	text-align: center;
 	width: 105px;
+	overflow: hidden;
+	position: relative;
 }
 .navbar__navigation_element a {
 font-family: 'Inter', sans-serif;
@@ -160,8 +162,25 @@ line-height: 24px;
 letter-spacing: 0em;
 color: #fff;
 cursor: pointer;
+display: block;
 
 }
+.navbar_animation{
+	animation: navbar_animation 1s;
+}
+@keyframes navbar_animation {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+  }
+
+
+
+
+
 .navbar__languages {
 
   width: 140px;
@@ -265,11 +284,6 @@ color: #fff;
 }
 :root {
   --swiper-pagination-bullet-horizontal-gap: 20px;
-}
-
-
-.navbar_animation{
-	animation-name: navbar_animation;
 }
 
 
