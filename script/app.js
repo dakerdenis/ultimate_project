@@ -71,7 +71,7 @@ function change_navbar(e){
             navbar__elements.forEach(element => {
                 element.classList.remove('navbar_animation')
             });
-        },1000);
+        },800);
     }else if (e ==='ru'){
         for(let i = 0; i < 5; i ++){
             navbar__elements[i].innerText = languageru_nav[i]
@@ -81,7 +81,7 @@ function change_navbar(e){
             navbar__elements.forEach(element => {
                 element.classList.remove('navbar_animation')
             });
-        },1000);
+        },800);
     }
     
 }

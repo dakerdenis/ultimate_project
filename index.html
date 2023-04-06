@@ -28,26 +28,26 @@
       <div class="navbar_container">
         <!----logo & nav---->
         <div class="navbar__logo_nav_wrapper">
-          <div class="navbar__logo">
+          <a  href="#slide1" class="navbar__logo">
             <img src="./img/small_logo.svg" alt="">
-          </div>
+          </a>
 
           <div class="navbar__navigation">
             <div class="navbar__navigation_wrapper">
               <div class="navbar__navigation_element">
-                <a id="nav_content" href="#"></a>
+                <a href="#slide2" id="nav_content" ></a>
               </div>
               <div class="navbar__navigation_element">
-                <a id="nav_content" href="#"></a>
+                <a href="#slide3" id="nav_content" ></a>
               </div>
               <div class="navbar__navigation_element">
-                <a id="nav_content" href="#"></a>
+                <a href="#slide4" id="nav_content" ></a>
               </div>
               <div class="navbar__navigation_element">
-                <a id="nav_content" href="#"></a>
+                <a href="#slide5" id="nav_content" ></a>
               </div>
               <div class="navbar__navigation_element">
-                <a id="nav_content" href="#"></a>
+                <a href="#slide6" id="nav_content" ></a>
               </div>
             </div>
           </div>
@@ -73,12 +73,12 @@
     <!-- Swiper -->
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide">
+        <div data-hash="slide1" class="swiper-slide">
           <img class="slider__big_logo" src="./img/big_logo.svg" alt="">
         </div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-        <div class="swiper-slide">
+        <div data-hash="slide2" class="swiper-slide" >Slide 2</div>
+        <div data-hash="slide3" class="swiper-slide" >Slide 3</div>
+        <div data-hash="slide4" class="swiper-slide" >
           <div class="sparkle-button_container"></div>
           <div class="sparkle-button">
 
@@ -195,6 +195,8 @@
             </span>
           </div>
         </div>
+        <div data-hash="slide5" class="swiper-slide" >Slide 4</div>
+        <div data-hash="slide6" class="swiper-slide" >Slide 5</div>
       </div>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
@@ -225,6 +227,9 @@
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper(".mySwiper", {
+      hashNavigation: {
+        watchState: true,
+      },
       slidesPerView: 1,
       spaceBetween: 0,
       loop: true,
